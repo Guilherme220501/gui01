@@ -7,15 +7,19 @@
     <title>Formulario</title>
 </head>
 <style>
+    body{text-align: center;background: linear-gradient(to right,white,black,white);}
+    summary{width: 300px;margin: auto;}
+    select{border-radius: 10px 10px;background-color: black;color: yellow;border: 3px solid red;}
     fieldset{background-color: blueviolet;width: 300px;padding: 10px;margin: auto;border-radius: 10px 10px;box-shadow: 10px 10px 10px white;}
-    input{text-align: left;color: black;width: 200px;margin: auto;}
-    label{display: flex;flex-direction: column;padding: 10px;font-size: 20px;color: white;}
+    .input{width: 300px;border: 3px solid red;border-radius: 10px 10px;}
+    input{text-align: left;color: black;width: 200px;margin: auto;border-radius: 10px 10px;}
+    label{display: flex;flex-direction: column;padding: 10px;font-size: 20px;color: white;border-radius: 10px 10px;}
     option{background-color: beige;color: red;}
-    textarea{background-color: beige;border: 2px solid red;border-radius: 10px 10px;width: 300px;height: 200px;}
+    textarea{background-color: beige;border: 6px solid red;border-radius: 10px 10px;width: 300px;height: 200px;}
     button{background-color: bisque;color: red;border-radius: 10px 10px;box-shadow: 5px 5px 5px red;}
-    h1{color: black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 30px;font-style: oblique;}
+    h1{color: rgb(255, 255, 255);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 30px;font-style: oblique;}
     p{color: white;font-family: 'Times New Roman', Times, serif;font-family: 'Times New Roman', Times, serif;font-size: 15px;}
-    .color{background-color: black;border-radius: 10px 10px;box-shadow: 10px 10px 10px red;width: 300px;margin: auto;padding: 10px;}
+    .color{background-color: black;border-radius: 10px 10px;box-shadow: 10px 10px 10px red;width: 200px;margin: auto;padding: 10px;display: flex;flex-direction: column;}
 </style>
 <body>
     <div id="text"><details><summary style="background-color: beige;color: black;border: 2px solid beige;border-radius: 10px 10px;box-shadow: 10px 10px 10px red;">Cadastro de <b style="color: red;">Brasileiros</b></summary>
@@ -56,6 +60,7 @@
             </div>
             <br>
             <label>Qual o Seu <b style="color: red;">Signo</b>?</label>
+            <select required>
             <option value="" selected disabled>Selecione</option>
             <option value="Áries">Áries</option>
             <option value="Touro">Touro</option>
@@ -70,6 +75,7 @@
             <option value="Capricórnio">Capricórnio</option>
             <option value="Aquário">Aquário</option>
             <option value="Peixes">Peixes</option>
+            </select>
             <br>
             <label>Me fale sobre sua <b style="color: red;">Experiência</b></label>
             <textarea name="Experiência" id="Experiência" rows="6"></textarea>
